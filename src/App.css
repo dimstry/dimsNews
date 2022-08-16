@@ -1,6 +1,19 @@
 .App {
   text-align: center;
 }
+.card_image{
+  cursor: pointer;
+  z-index: 1;
+  transition: transform .2s;
+  overflow: hidden;
+}
+.card {
+  overflow: hidden;
+}
+
+.card_image:hover {
+  transform: scale(1.2);
+}
 
 .App-logo {
   height: 40vmin;
