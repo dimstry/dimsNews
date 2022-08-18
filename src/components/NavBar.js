@@ -1,21 +1,32 @@
+// import { useEffect, useState } from "react";
 import {
     Navbar,
     Dropdown,
     Button,
     Form,
     Input,
-    Menu
+    Menu,
+    Swap
 } from "react-daisyui"
 
 function NavBar () {
 
+    // const [darkToggle, setDarkToggle] = useState(false)
+
+    // useEffect(() => {
+    //     const cek = document.querySelector("#cek");
+    //     cek.addEventListener()
+    // })
+
     return(
-        <div className="flex w-full component-preview items-center justify-center gap-2 font-sans">
-            <Navbar className="bg-neutral text-neutral-content">
+        <div className="flex w-full component-preview items-center justify-center gap-2 font-sans px-5 lg:px-40 sticky top-0 z-50">
+            <Navbar className="bg-white text-blue-500">
                 <div className="flex-1">
-                <Button className="text-xl normal-case" color="ghost">
-                    DimsNews
-                </Button>
+                <label className="swap swap-flip text-4xl">
+                    <input type="checkbox" id="cek"/>
+                    <div className="swap-on">😈</div>
+                    <div className="swap-off">😇</div>
+                </label>
                 </div>
                 <Navbar.Center className="hidden lg:flex mr-96">
                     <Menu horizontal className="p-0">
