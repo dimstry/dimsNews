@@ -15,6 +15,27 @@
   transform: scale(1.2);
 }
 
+.card-bordered {
+  border-width: 0;
+  --tw-border-opacity: 1;
+  border-color: #f6f6f6;
+}
+
+
+
+.card-title {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 400;
+}
+
+.card_body {
+  padding: 0.1em;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
