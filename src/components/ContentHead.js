@@ -9,7 +9,7 @@ function ContentHead(datas) {
 
     return(
         <div className="gap-3 md:flex">
-            {datas.articles ? datas.articles.slice(0, 5).map((data, i) => {
+            {datas.articles ? datas.articles.slice(0,5).map((data, i) => {
                 return(
                     <div className="md:flex-1 mb-4" key={i}>
                         <a href={data.url}>
@@ -17,12 +17,12 @@ function ContentHead(datas) {
                                 <div className="card">
                                     <Card.Image
                                         src={data.urlToImage}
-                                        alt="Shoes"
+                                        alt={data.source.name}
                                         className="card_image"
                                     />
                                 </div>
                                 <Card.Body className="card_body m-1">
-                                    <Card.Title tag="p">{data.title}</Card.Title>
+                                    <Card.Title tag="p">{data.title.slice(0,120)}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </a>

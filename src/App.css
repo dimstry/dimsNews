@@ -36,9 +36,30 @@
 .card_body {
   padding: 0.1em;
 }
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+.main_left {
+  width: 70%;
+}
+
+.main_right {
+  width: 30%;
+  height: 55vh;
+  overflow-y: auto;
+}
+
+.card-img-left {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: column;
+  padding: 1em;
+  gap: 0.5rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

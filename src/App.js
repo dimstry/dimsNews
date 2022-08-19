@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
-import ContentHead from './components/ContentHead';
-import { data } from "autoprefixer";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import NavBar from './components/NavBar';
+import ContentHead from './components/ContentHead';
+import MainLeft from './components/MainLeft';
+import MainRight from './components/MainRight';
+import { data } from 'autoprefixer';
 
 function App() {
   // init
@@ -36,13 +38,16 @@ function App() {
         <h1 className='text-left text-3xl my-4'>News 🔥</h1>
         <ContentHead {...datas}/>
       </div>
-      <div className='h-48 bg-slate-400  container mx-auto px-5 lg:px-40 flex justify-center'>
-        <div className='w-64 main_left bg-slate-50'>
-          <h2>Left</h2>
+      <div className='container px-5 mt-5 hidden md:px-40 md:flex md:justify-evenly'>
+        <div className='main_left border-y-2'>
+          <MainLeft {...datas}/>
         </div>
         <div className='main_right'>
-          <h2>Right</h2>
+          <h2 className="text-sky-500 text-lg">Rekomedasi Untuk Anda</h2>
+          <MainRight {...datas} />
         </div>
+      </div>
+      <div className='container'>
       </div>
     </div>
   );
