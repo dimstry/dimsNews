@@ -1,6 +1,6 @@
 import "../App.css";
 
-
+// Menerima data dari perent
 function MainLeft(datas) {
     return(
     <div className="grid grid-cols-2 gap-4">

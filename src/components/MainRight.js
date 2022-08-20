@@ -3,7 +3,7 @@ import {
 } from "react-daisyui";
 import "../App.css";
 
-
+// Menerima data dari perent
 function MainRight(datas) {
 
 

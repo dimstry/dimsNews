@@ -4,7 +4,7 @@ import {
 } from "react-daisyui";
 import "../App.css";
 
-
+// Menerima data dari perent
 function ContentHead(datas) {
 
     return(
