@@ -38,7 +38,7 @@ function App() {
         <h1 className='text-left text-3xl my-4'>News 🔥</h1>
         <ContentHead {...datas}/>
       </div>
-      <div className='container px-5 mt-5 hidden md:px-40 md:flex md:justify-evenly'>
+      <div className='container mx-auto px-5 mt-5 hidden lg:px-40 md:flex md:justify-evenly'>
         <div className='main_left border-y-2'>
           <MainLeft {...datas}/>
         </div>

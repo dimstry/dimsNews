@@ -12,7 +12,7 @@ function MainRight(datas) {
     return(
         <div className="gap-2">
             {
-                datas.articles ? datas.articles.slice(9,18).map((data, i) => {
+                datas.articles ? datas.articles.slice(9).map((data, i) => {
                     return(
                         <a href="#" className="cursor-pointer" key={i}>
                         <Card side="md" className="mb-5">
