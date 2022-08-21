@@ -3,7 +3,7 @@ import "../App.css";
 // Menerima data dari perent
 function MainLeft(datas) {
     return(
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-10">
         {
             datas.articles ? datas.articles.slice(7,9).map((data, i) => {
                 return(

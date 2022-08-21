@@ -14,21 +14,20 @@ function MainRight(datas) {
             {
                 datas.articles ? datas.articles.slice(9).map((data, i) => {
                     return(
-                        <a href="#" className="cursor-pointer" key={i}>
-                        <Card side="md" className="mb-5">
-                            <div className="card">
-                                <Card.Image
-                                src={data.urlToImage}
-                                alt={data.source.name}
-                                className="w-72 card_image poos"
-                                />
-                            </div>
-                            <Card.Body className="card_body gap-0">
-                                <Card.Title tag="p">{data.title.slice(0,60)}</Card.Title>
-                                <Card.Title tag="i" className="pt-0">{ new Date(data.publishedAt).toLocaleDateString("id")}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </a>
+                        <a href={data.url} className="cursor-pointer sm:w-96" key={i}>
+                            <Card side="sm" className="mb-5 sm:flex">
+                                <div className="card">
+                                    <Card.Image
+                                    src={data.urlToImage}
+                                    alt={data.source.name}
+                                    className="card_image w-96 md:w-72"
+                                    />
+                                </div>
+                                <Card.Body className="card_body gap-0">
+                                    <Card.Title tag="p">{data.title.slice(0,65)}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </a>
                     )
                 }) : ""
             }

@@ -33,21 +33,26 @@ function App() {
 
   return (
     <div className="App">
+      {/* Navbar */}
       <NavBar />
+      {/* Content Head */}
       <div className='container mx-auto px-5 lg:px-40 mt-10'>
         <h1 className='text-left text-3xl my-4'>News 🔥</h1>
         <ContentHead {...datas}/>
       </div>
-      <div className='container mx-auto px-5 mt-5 hidden lg:px-40 md:flex md:justify-evenly'>
-        <div className='main_left border-y-2'>
-          <MainLeft {...datas}/>
-        </div>
-        <div className='main_right'>
-          <h2 className="text-sky-500 text-lg">Rekomedasi Untuk Anda</h2>
-          <MainRight {...datas} />
-        </div>
-      </div>
-      <div className='container'>
+      {/* Main section */}
+      <div className='main_section'>    
+        <h2 className="text-sky-500 text-lg">Rekomedasi Untuk Anda</h2>
+          <div className='container mx-auto px-5 mt-5 lg:px-40 flex justify-evenly'>
+            {/* Content Main kiri */}
+            <div className='main_left border-y-2 hidden lg:flex'>
+              <MainLeft {...datas}/>
+            </div>
+            {/* Content Main */}
+            <div className='main_right'>
+              <MainRight {...datas} />
+            </div>
+          </div>
       </div>
     </div>
   );

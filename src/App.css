@@ -49,9 +49,15 @@
 }
 
 .main_right {
-  width: 30%;
+  width: 35%;
   height: 50vh;
   overflow-y: auto;
+}
+
+@media only screen and (max-width:560px) {
+  .main_right {
+    width: 100%;
+  }
 }
 
 .card-img-left {
