@@ -3,7 +3,7 @@ Sebuah Web Portal berita yang menyediakan berita" di Indonesia dari berbagai sum
 yang di buat mengunakana Public APIs
 
 ## Note 🗒️
-* - Fitur 
+* APi tidak di perbolehkan kecuali localhost
 ## What Use 👾
 * <a href="https://reactjs.org/">React js</a> Library
 * <a href="https://www.npmjs.com/package/react-axios">Axios</a> For Fetching APi
@@ -17,6 +17,8 @@ yang di buat mengunakana Public APIs
 ### `npm install`
 install modules 
 
+### `npm start `
+for start the project
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
