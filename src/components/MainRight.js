@@ -5,10 +5,6 @@ import "../App.css";
 
 // Menerima data dari perent
 function MainRight(datas) {
-
-
-
-
     return(
         <div className="gap-2">
             {

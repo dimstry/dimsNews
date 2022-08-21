@@ -6,7 +6,9 @@ import NavBar from './components/NavBar';
 import ContentHead from './components/ContentHead';
 import MainLeft from './components/MainLeft';
 import MainRight from './components/MainRight';
-import { data } from 'autoprefixer';
+import NavCategory from './components/NavCategory';
+import MyFooter from './components/MyFooter';
+
 
 function App() {
   // init
@@ -53,6 +55,17 @@ function App() {
               <MainRight {...datas} />
             </div>
           </div>
+      </div>
+      {/* Category Sectiom */}
+      {/* <div className='container mx-auto px-5 lg:px-40 mt-10'>
+        <h2 className='text-left text-3xl my-4'>Category</h2> */}
+        {/* Nav Category */}
+        {/* <NavCategory /> */}
+      {/* </div> */}
+
+      {/* Footer section */}
+      <div className='mt-20 bottom-0'>
+        <MyFooter />
       </div>
     </div>
   );

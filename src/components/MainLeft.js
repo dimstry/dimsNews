@@ -17,7 +17,7 @@ function MainLeft(datas) {
                                 <h6 className="card-title -mb-5 text-yellow-400 text-lg">{data.source.name}</h6>
                             </div>
                         </div> 
-                        <p className="text-zinc-800">{data.content.slice(0,160)}... <a href={data.url} className="link-primary">Lihat selengkapnya</a></p>
+                        <p className="text-zinc-800 mt-5">{data.content.slice(0,160)}.... <a href={data.url} className="link-primary">Lihat selengkapnya</a></p>
                     </div>
                 )
             }) : ""
