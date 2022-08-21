@@ -29,6 +29,7 @@ function App() {
       })
       .catch(err => console.warn(err));
   }
+  
   useEffect(() => {
       getDatas();
   }, [])
