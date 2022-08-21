@@ -14,17 +14,23 @@ function App() {
   const axios = require('axios').default;
 
   // get data dari api
-  const getDatas = () => { 
-      axios.get('https://newsapi.org/v2/top-headlines', {
-          params: {
-              country: 'id',
-              apiKey: 'da3148f0a64b42e4b43d6fa816a0d3f8',
-          }
-      })
-      .then(res => {
-        //set data
-          const value = res.data
-          setDatas(value)
+  
+  const getDatas = async () => { 
+    // axios.get('https://newsapi.org/v2/top-headlines', {
+      //     params: {
+        //         country: 'id',
+        //         apiKey: 'da3148f0a64b42e4b43d6fa816a0d3f8',
+        //     }
+        // })
+      await fetch("https://newsapi.org/v2/top-headlines?country=id&apiKey=da3148f0a64b42e4b43d6fa816a0d3f8")
+      .then((serverPromise) => {
+      serverPromise.json()
+        .then(res => {
+          //set data
+            const value = res
+            console.log(value)
+            setDatas(value)
+        })
       })
       .catch(err => console.warn(err));
   }
