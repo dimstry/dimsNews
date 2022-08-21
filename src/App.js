@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from "axios";
 import { useEffect, useState } from "react";
 import NavBar from './components/NavBar';
 import ContentHead from './components/ContentHead';
@@ -13,6 +11,7 @@ import MyFooter from './components/MyFooter';
 function App() {
   // init
   const [datas, setDatas] = useState([])
+  const axios = require('axios').default;
 
   // get data dari api
   const getDatas = () => { 
