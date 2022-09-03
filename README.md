@@ -4,6 +4,7 @@ yang di buat mengunakana Public APIs
 
 ## Note 🗒️
 * APi tidak di perbolehkan kecuali localhost
+* Belum di hosting
 ## What Use 👾
 * <a href="https://reactjs.org/">React js</a> Library
 * <a href="https://www.npmjs.com/package/react-axios">Axios</a> For Fetching APi
